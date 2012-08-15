@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F61863315DBCFA000A23E51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F61863215DBCFA000A23E51 /* UIKit.framework */; };
+		0F61863515DBCFA000A23E51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F61863415DBCFA000A23E51 /* Foundation.framework */; };
+		0F61863715DBCFA000A23E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F61863615DBCFA000A23E51 /* CoreGraphics.framework */; };
+		0F61863D15DBCFA000A23E51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F61863B15DBCFA000A23E51 /* InfoPlist.strings */; };
+		0F61863F15DBCFA000A23E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61863E15DBCFA000A23E51 /* main.m */; };
+		0F61864315DBCFA000A23E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864215DBCFA000A23E51 /* AppDelegate.m */; };
+		0F61864615DBCFA000A23E51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864515DBCFA000A23E51 /* ViewController.m */; };
+		0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
+		0F61865015DBCFE900A23E51 /* droppedImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864F15DBCFE900A23E51 /* droppedImage.pdf */; };
+		0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F61862E15DBCFA000A23E51 /* KIFCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F61863215DBCFA000A23E51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0F61863415DBCFA000A23E51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F61863615DBCFA000A23E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0F61863A15DBCFA000A23E51 /* KIFCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KIFCalculator-Info.plist"; sourceTree = "<group>"; };
+		0F61863C15DBCFA000A23E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0F61863E15DBCFA000A23E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F61864015DBCFA000A23E51 /* KIFCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		0F61864115DBCFA000A23E51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0F61864215DBCFA000A23E51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0F61864415DBCFA000A23E51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0F61864515DBCFA000A23E51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0F61864815DBCFA000A23E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		0F61864F15DBCFE900A23E51 /* droppedImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = droppedImage.pdf; sourceTree = "<group>"; };
+		0F61865115DBD02300A23E51 /* swipe-conference@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe-conference@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F61862B15DBCFA000A23E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F61863315DBCFA000A23E51 /* UIKit.framework in Frameworks */,
+				0F61863515DBCFA000A23E51 /* Foundation.framework in Frameworks */,
+				0F61863715DBCFA000A23E51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F61862315DBCFA000A23E51 = {
+			isa = PBXGroup;
+			children = (
+				0F61863815DBCFA000A23E51 /* KIFCalculator */,
+				0F61863115DBCFA000A23E51 /* Frameworks */,
+				0F61862F15DBCFA000A23E51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F61862F15DBCFA000A23E51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F61862E15DBCFA000A23E51 /* KIFCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F61863115DBCFA000A23E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F61863215DBCFA000A23E51 /* UIKit.framework */,
+				0F61863415DBCFA000A23E51 /* Foundation.framework */,
+				0F61863615DBCFA000A23E51 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F61863815DBCFA000A23E51 /* KIFCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				0F61864115DBCFA000A23E51 /* AppDelegate.h */,
+				0F61864215DBCFA000A23E51 /* AppDelegate.m */,
+				0F61864415DBCFA000A23E51 /* ViewController.h */,
+				0F61864515DBCFA000A23E51 /* ViewController.m */,
+				0F61864715DBCFA000A23E51 /* ViewController.xib */,
+				0F61863915DBCFA000A23E51 /* Supporting Files */,
+			);
+			path = KIFCalculator;
+			sourceTree = "<group>";
+		};
+		0F61863915DBCFA000A23E51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F61865115DBD02300A23E51 /* swipe-conference@2x.png */,
+				0F61864F15DBCFE900A23E51 /* droppedImage.pdf */,
+				0F61863A15DBCFA000A23E51 /* KIFCalculator-Info.plist */,
+				0F61863B15DBCFA000A23E51 /* InfoPlist.strings */,
+				0F61863E15DBCFA000A23E51 /* main.m */,
+				0F61864015DBCFA000A23E51 /* KIFCalculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F61862D15DBCFA000A23E51 /* KIFCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F61864C15DBCFA000A23E51 /* Build configuration list for PBXNativeTarget "KIFCalculator" */;
+			buildPhases = (
+				0F61862A15DBCFA000A23E51 /* Sources */,
+				0F61862B15DBCFA000A23E51 /* Frameworks */,
+				0F61862C15DBCFA000A23E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIFCalculator;
+			productName = KIFCalculator;
+			productReference = 0F61862E15DBCFA000A23E51 /* KIFCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F61862515DBCFA000A23E51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 0F61862815DBCFA000A23E51 /* Build configuration list for PBXProject "KIFCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F61862315DBCFA000A23E51;
+			productRefGroup = 0F61862F15DBCFA000A23E51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F61862D15DBCFA000A23E51 /* KIFCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F61862C15DBCFA000A23E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F61863D15DBCFA000A23E51 /* InfoPlist.strings in Resources */,
+				0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */,
+				0F61865015DBCFE900A23E51 /* droppedImage.pdf in Resources */,
+				0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F61862A15DBCFA000A23E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F61863F15DBCFA000A23E51 /* main.m in Sources */,
+				0F61864315DBCFA000A23E51 /* AppDelegate.m in Sources */,
+				0F61864615DBCFA000A23E51 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F61863B15DBCFA000A23E51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F61863C15DBCFA000A23E51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0F61864715DBCFA000A23E51 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F61864815DBCFA000A23E51 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F61864A15DBCFA000A23E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F61864B15DBCFA000A23E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F61864D15DBCFA000A23E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIFCalculator/KIFCalculator-Prefix.pch";
+				INFOPLIST_FILE = "KIFCalculator/KIFCalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0F61864E15DBCFA000A23E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIFCalculator/KIFCalculator-Prefix.pch";
+				INFOPLIST_FILE = "KIFCalculator/KIFCalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F61862815DBCFA000A23E51 /* Build configuration list for PBXProject "KIFCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F61864A15DBCFA000A23E51 /* Debug */,
+				0F61864B15DBCFA000A23E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F61864C15DBCFA000A23E51 /* Build configuration list for PBXNativeTarget "KIFCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F61864D15DBCFA000A23E51 /* Debug */,
+				0F61864E15DBCFA000A23E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F61862515DBCFA000A23E51 /* Project object */;
+}
