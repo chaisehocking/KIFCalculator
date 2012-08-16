@@ -15,7 +15,6 @@
 		0F61864315DBCFA000A23E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864215DBCFA000A23E51 /* AppDelegate.m */; };
 		0F61864615DBCFA000A23E51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864515DBCFA000A23E51 /* ViewController.m */; };
 		0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
-		0F61865015DBCFE900A23E51 /* droppedImage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864F15DBCFE900A23E51 /* droppedImage.pdf */; };
 		0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		0F61864415DBCFA000A23E51 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0F61864515DBCFA000A23E51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F61864815DBCFA000A23E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		0F61864F15DBCFE900A23E51 /* droppedImage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = droppedImage.pdf; sourceTree = "<group>"; };
 		0F61865115DBD02300A23E51 /* swipe-conference@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe-conference@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				0F61865115DBD02300A23E51 /* swipe-conference@2x.png */,
-				0F61864F15DBCFE900A23E51 /* droppedImage.pdf */,
 				0F61863A15DBCFA000A23E51 /* KIFCalculator-Info.plist */,
 				0F61863B15DBCFA000A23E51 /* InfoPlist.strings */,
 				0F61863E15DBCFA000A23E51 /* main.m */,
@@ -156,7 +153,6 @@
 			files = (
 				0F61863D15DBCFA000A23E51 /* InfoPlist.strings in Resources */,
 				0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */,
-				0F61865015DBCFE900A23E51 /* droppedImage.pdf in Resources */,
 				0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +276,7 @@
 				0F61864E15DBCFA000A23E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
