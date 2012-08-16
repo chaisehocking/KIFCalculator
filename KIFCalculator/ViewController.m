@@ -34,6 +34,7 @@ typedef enum {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	self.answerLabel.accessibilityLabel = NSLocalizedString(@"Answer", @"");
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -48,9 +49,14 @@ typedef enum {
 	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+-(void)setAnswerLabelText:(NSString *)text{
+	self.answerLabel.text = text;
+	self.answerLabel.accessibilityValue = text;
+}
+
 -(void)checkForClear{
 	if(self.answerShouldClear){
-		self.answerLabel.text = nil;
+		[self setAnswerLabelText:nil];
 		self.answerShouldClear = NO;
 	}
 }
@@ -58,10 +64,10 @@ typedef enum {
 -(IBAction)numberButtonPressed:(UIButton *)sender{
 	[self checkForClear];
 	if([self.answerLabel.text length] > 0){
-		self.answerLabel.text = [self.answerLabel.text stringByAppendingString:sender.titleLabel.text];
+		[self setAnswerLabelText:[self.answerLabel.text stringByAppendingString:sender.titleLabel.text]];
 	}
 	else {
-		self.answerLabel.text = sender.titleLabel.text;
+		[self setAnswerLabelText:sender.titleLabel.text];
 	}
 }
 
@@ -84,7 +90,7 @@ typedef enum {
 
 -(void)updateCurrentAnswer{
 	self.currentAnswer = [self evaluateAnswer];
-	self.answerLabel.text = [NSString stringWithFormat:@"%g", self.currentAnswer];
+	[self setAnswerLabelText:[NSString stringWithFormat:@"%g", self.currentAnswer]];
 	self.answerShouldClear = YES;
 }
 
