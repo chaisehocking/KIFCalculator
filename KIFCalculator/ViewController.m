@@ -30,23 +30,15 @@ typedef enum {
 @synthesize currentOperator=_currentOperator;
 @synthesize answerShouldClear=_answerShouldClear;
 
+-(void)dealloc{
+	[_answerLabel release];
+	[super dealloc];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	self.answerLabel.accessibilityLabel = NSLocalizedString(@"Answer", @"");
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 -(void)setAnswerLabelText:(NSString *)text{
