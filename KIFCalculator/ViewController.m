@@ -84,7 +84,7 @@ typedef enum {
 
 -(void)updateCurrentAnswer{
 	self.currentAnswer = [self evaluateAnswer];
-	self.answerLabel.text = [NSString stringWithFormat:@"%f", self.currentAnswer];
+	self.answerLabel.text = [NSString stringWithFormat:@"%g", self.currentAnswer];
 	self.answerShouldClear = YES;
 }
 
