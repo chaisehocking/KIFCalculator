@@ -31,6 +31,14 @@
 		0FF6DA9515E663530040F53B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9415E663530040F53B /* Icon.png */; };
 		0FF6DA9615E663790040F53B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9415E663530040F53B /* Icon.png */; };
 		0FF6DA9715E663820040F53B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9215E6630B0040F53B /* Icon@2x.png */; };
+		0FF6DA9B15E66FC00040F53B /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9915E66FC00040F53B /* FeedbackViewController.m */; };
+		0FF6DA9C15E66FC00040F53B /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9915E66FC00040F53B /* FeedbackViewController.m */; };
+		0FF6DA9D15E66FC00040F53B /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9A15E66FC00040F53B /* FeedbackViewController.xib */; };
+		0FF6DA9E15E66FC00040F53B /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9A15E66FC00040F53B /* FeedbackViewController.xib */; };
+		0FF6DAA015E6785B0040F53B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA9F15E6785B0040F53B /* QuartzCore.framework */; };
+		0FF6DAA115E678670040F53B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA9F15E6785B0040F53B /* QuartzCore.framework */; };
+		0FF6DAA415E679230040F53B /* KIFTestScenario+Feedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DAA315E679230040F53B /* KIFTestScenario+Feedback.m */; };
+		0FF6DAA715E67B3A0040F53B /* KIFCalculatorTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DAA615E67B3A0040F53B /* KIFCalculatorTestController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +78,13 @@
 		0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+CalculatorOperations.m"; sourceTree = "<group>"; };
 		0FF6DA9215E6630B0040F53B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		0FF6DA9415E663530040F53B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		0FF6DA9815E66FC00040F53B /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		0FF6DA9915E66FC00040F53B /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		0FF6DA9A15E66FC00040F53B /* FeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		0FF6DA9F15E6785B0040F53B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0FF6DAA315E679230040F53B /* KIFTestScenario+Feedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+Feedback.m"; sourceTree = "<group>"; };
+		0FF6DAA515E67B3A0040F53B /* KIFCalculatorTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIFCalculatorTestController.h; sourceTree = "<group>"; };
+		0FF6DAA615E67B3A0040F53B /* KIFCalculatorTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIFCalculatorTestController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF6DAA015E6785B0040F53B /* QuartzCore.framework in Frameworks */,
 				0F61863315DBCFA000A23E51 /* UIKit.framework in Frameworks */,
 				0F61863515DBCFA000A23E51 /* Foundation.framework in Frameworks */,
 				0F61863715DBCFA000A23E51 /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +107,7 @@
 				0FF6DA7315E645C10040F53B /* UIKit.framework in Frameworks */,
 				0FF6DA7415E645C10040F53B /* Foundation.framework in Frameworks */,
 				0FF6DA7515E645C10040F53B /* CoreGraphics.framework in Frameworks */,
+				0FF6DAA115E678670040F53B /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +136,7 @@
 		0F61863115DBCFA000A23E51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FF6DA9F15E6785B0040F53B /* QuartzCore.framework */,
 				0F61863215DBCFA000A23E51 /* UIKit.framework */,
 				0F61863415DBCFA000A23E51 /* Foundation.framework */,
 				0F61863615DBCFA000A23E51 /* CoreGraphics.framework */,
@@ -129,12 +147,15 @@
 		0F61863815DBCFA000A23E51 /* KIFCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				0FF6DA8115E646E30040F53B /* Tests */,
 				0F61864115DBCFA000A23E51 /* AppDelegate.h */,
 				0F61864215DBCFA000A23E51 /* AppDelegate.m */,
 				0F61864415DBCFA000A23E51 /* ViewController.h */,
 				0F61864515DBCFA000A23E51 /* ViewController.m */,
 				0F61864715DBCFA000A23E51 /* ViewController.xib */,
+				0FF6DA9815E66FC00040F53B /* FeedbackViewController.h */,
+				0FF6DA9915E66FC00040F53B /* FeedbackViewController.m */,
+				0FF6DA9A15E66FC00040F53B /* FeedbackViewController.xib */,
+				0FF6DA8115E646E30040F53B /* Tests */,
 				0F61863915DBCFA000A23E51 /* Supporting Files */,
 			);
 			path = KIFCalculator;
@@ -154,6 +175,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0F6CF2F915E68A2000807E71 /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */,
+				0FF6DAA315E679230040F53B /* KIFTestScenario+Feedback.m */,
+			);
+			name = Scenarios;
+			sourceTree = "<group>";
+		};
 		0FF6DA6415E645AC0040F53B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,9 +195,19 @@
 		0FF6DA8115E646E30040F53B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */,
+				0FF6DAA815E67B5A0040F53B /* Controller */,
+				0F6CF2F915E68A2000807E71 /* Scenarios */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		0FF6DAA815E67B5A0040F53B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6DAA515E67B3A0040F53B /* KIFCalculatorTestController.h */,
+				0FF6DAA615E67B3A0040F53B /* KIFCalculatorTestController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +300,7 @@
 				0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */,
 				0FF6DA9315E6630B0040F53B /* Icon@2x.png in Resources */,
 				0FF6DA9515E663530040F53B /* Icon.png in Resources */,
+				0FF6DA9D15E66FC00040F53B /* FeedbackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +313,7 @@
 				0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */,
 				0FF6DA9615E663790040F53B /* Icon.png in Resources */,
 				0FF6DA9715E663820040F53B /* Icon@2x.png in Resources */,
+				0FF6DA9E15E66FC00040F53B /* FeedbackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +327,7 @@
 				0F61863F15DBCFA000A23E51 /* main.m in Sources */,
 				0F61864315DBCFA000A23E51 /* AppDelegate.m in Sources */,
 				0F61864615DBCFA000A23E51 /* ViewController.m in Sources */,
+				0FF6DA9B15E66FC00040F53B /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +339,9 @@
 				0FF6DA7015E645C10040F53B /* AppDelegate.m in Sources */,
 				0FF6DA7115E645C10040F53B /* ViewController.m in Sources */,
 				0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */,
+				0FF6DA9C15E66FC00040F53B /* FeedbackViewController.m in Sources */,
+				0FF6DAA415E679230040F53B /* KIFTestScenario+Feedback.m in Sources */,
+				0FF6DAA715E67B3A0040F53B /* KIFCalculatorTestController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

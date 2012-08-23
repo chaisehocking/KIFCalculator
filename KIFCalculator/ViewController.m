@@ -2,7 +2,7 @@
 //  Created by Chaise Hocking
 
 #import "ViewController.h"
-
+#import "FeedbackViewController.h"
 typedef enum {
 	operatorNone,
 	operatorPlus,
@@ -104,6 +104,13 @@ typedef enum {
 -(IBAction)multiplyButtonPressed:(UIButton *)sender{
 	[self updateCurrentAnswer];
 	self.currentOperator = operatorMultiply;
+}
+
+-(IBAction)infoButtonPressed:(UIButton *)sender{
+	[self presentViewController:[[[FeedbackViewController alloc] initWithNibName:nil bundle:nil] autorelease]
+					   animated:YES
+					 completion:NULL];
+	
 }
 
 @end

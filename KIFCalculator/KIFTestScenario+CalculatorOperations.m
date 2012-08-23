@@ -102,7 +102,7 @@
 	KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Ensure that numbers with multiple digits can be entered and calculated"];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"1" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"2" traits:UIAccessibilityTraitButton]];
-	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"*" traits:UIAccessibilityTraitButton]];
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"×" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"3" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"4" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"5" traits:UIAccessibilityTraitButton]];

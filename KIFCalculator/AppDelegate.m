@@ -5,7 +5,7 @@
 #import "ViewController.h"
 
 #if RUN_KIF_TESTS
-#import "KIFTestController.h"
+#import "KIFCalculatorTestController.h"
 #endif
 
 @implementation AppDelegate
@@ -29,7 +29,7 @@
     [self.window makeKeyAndVisible];
 	
 #if RUN_KIF_TESTS
-    [[KIFTestController sharedInstance] startTestingWithCompletionBlock:^{
+    [[KIFCalculatorTestController sharedInstance] startTestingWithCompletionBlock:^{
         // Exit after the tests complete so that CI knows we're done
         exit([[KIFTestController sharedInstance] failureCount]);
     }];
