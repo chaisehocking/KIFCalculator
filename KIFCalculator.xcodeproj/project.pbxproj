@@ -27,6 +27,10 @@
 		0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
 		0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */; };
 		0FF6DA9115E64F680040F53B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA6B15E645AC0040F53B /* libKIF.a */; };
+		0FF6DA9315E6630B0040F53B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9215E6630B0040F53B /* Icon@2x.png */; };
+		0FF6DA9515E663530040F53B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9415E663530040F53B /* Icon.png */; };
+		0FF6DA9615E663790040F53B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9415E663530040F53B /* Icon.png */; };
+		0FF6DA9715E663820040F53B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9215E6630B0040F53B /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,8 @@
 		0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = frameworks/KIF/KIF.xcodeproj; sourceTree = SOURCE_ROOT; };
 		0FF6DA7D15E645C10040F53B /* KIFCalculatorTestable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFCalculatorTestable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+CalculatorOperations.m"; sourceTree = "<group>"; };
+		0FF6DA9215E6630B0040F53B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		0FF6DA9415E663530040F53B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,8 @@
 		0F61863915DBCFA000A23E51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FF6DA9415E663530040F53B /* Icon.png */,
+				0FF6DA9215E6630B0040F53B /* Icon@2x.png */,
 				0F61865115DBD02300A23E51 /* swipe-conference@2x.png */,
 				0F61863A15DBCFA000A23E51 /* KIFCalculator-Info.plist */,
 				0F61863B15DBCFA000A23E51 /* InfoPlist.strings */,
@@ -250,6 +258,8 @@
 				0F61863D15DBCFA000A23E51 /* InfoPlist.strings in Resources */,
 				0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */,
 				0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */,
+				0FF6DA9315E6630B0040F53B /* Icon@2x.png in Resources */,
+				0FF6DA9515E663530040F53B /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +270,8 @@
 				0FF6DA7715E645C10040F53B /* InfoPlist.strings in Resources */,
 				0FF6DA7815E645C10040F53B /* ViewController.xib in Resources */,
 				0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */,
+				0FF6DA9615E663790040F53B /* Icon.png in Resources */,
+				0FF6DA9715E663820040F53B /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
