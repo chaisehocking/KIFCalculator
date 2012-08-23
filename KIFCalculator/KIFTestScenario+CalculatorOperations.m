@@ -49,7 +49,7 @@
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"=" traits:UIAccessibilityTraitButton]];
 
 	[scenario addStep:[KIFTestStep stepToWaitForViewWithAccessibilityLabel:@"Answer"
-																	 value:@"648"
+																	 value:@"647"
 																	traits:UIAccessibilityTraitStaticText]];
 	return scenario;
 }
