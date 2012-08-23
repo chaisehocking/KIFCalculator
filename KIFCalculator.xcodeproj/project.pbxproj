@@ -16,7 +16,28 @@
 		0F61864615DBCFA000A23E51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864515DBCFA000A23E51 /* ViewController.m */; };
 		0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
 		0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
+		0FF6DA6F15E645C10040F53B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61863E15DBCFA000A23E51 /* main.m */; };
+		0FF6DA7015E645C10040F53B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864215DBCFA000A23E51 /* AppDelegate.m */; };
+		0FF6DA7115E645C10040F53B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864515DBCFA000A23E51 /* ViewController.m */; };
+		0FF6DA7315E645C10040F53B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F61863215DBCFA000A23E51 /* UIKit.framework */; };
+		0FF6DA7415E645C10040F53B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F61863415DBCFA000A23E51 /* Foundation.framework */; };
+		0FF6DA7515E645C10040F53B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F61863615DBCFA000A23E51 /* CoreGraphics.framework */; };
+		0FF6DA7715E645C10040F53B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F61863B15DBCFA000A23E51 /* InfoPlist.strings */; };
+		0FF6DA7815E645C10040F53B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
+		0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
+		0FF6DA8015E646490040F53B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA6B15E645AC0040F53B /* libKIF.a */; };
+		0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FF6DA6A15E645AC0040F53B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAB07268139719AC008AF393;
+			remoteInfo = KIF;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F61862E15DBCFA000A23E51 /* KIFCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +54,9 @@
 		0F61864515DBCFA000A23E51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F61864815DBCFA000A23E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		0F61865115DBD02300A23E51 /* swipe-conference@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe-conference@2x.png"; sourceTree = "<group>"; };
+		0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = frameworks/KIF/KIF.xcodeproj; sourceTree = SOURCE_ROOT; };
+		0FF6DA7D15E645C10040F53B /* KIFCalculatorTestable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFCalculatorTestable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+CalculatorOperations.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,17 @@
 				0F61863315DBCFA000A23E51 /* UIKit.framework in Frameworks */,
 				0F61863515DBCFA000A23E51 /* Foundation.framework in Frameworks */,
 				0F61863715DBCFA000A23E51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF6DA7215E645C10040F53B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF6DA8015E646490040F53B /* libKIF.a in Frameworks */,
+				0FF6DA7315E645C10040F53B /* UIKit.framework in Frameworks */,
+				0FF6DA7415E645C10040F53B /* Foundation.framework in Frameworks */,
+				0FF6DA7515E645C10040F53B /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0F61862E15DBCFA000A23E51 /* KIFCalculator.app */,
+				0FF6DA7D15E645C10040F53B /* KIFCalculatorTestable.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +115,8 @@
 		0F61863815DBCFA000A23E51 /* KIFCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				0FF6DA8115E646E30040F53B /* Tests */,
+				0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */,
 				0F61864115DBCFA000A23E51 /* AppDelegate.h */,
 				0F61864215DBCFA000A23E51 /* AppDelegate.m */,
 				0F61864415DBCFA000A23E51 /* ViewController.h */,
@@ -101,6 +139,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0FF6DA6415E645AC0040F53B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6DA6B15E645AC0040F53B /* libKIF.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FF6DA8115E646E30040F53B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,6 +175,23 @@
 			productReference = 0F61862E15DBCFA000A23E51 /* KIFCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0FF6DA6D15E645C10040F53B /* KIFCalculatorTestable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FF6DA7A15E645C10040F53B /* Build configuration list for PBXNativeTarget "KIFCalculatorTestable" */;
+			buildPhases = (
+				0FF6DA6E15E645C10040F53B /* Sources */,
+				0FF6DA7215E645C10040F53B /* Frameworks */,
+				0FF6DA7615E645C10040F53B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIFCalculatorTestable;
+			productName = KIFCalculator;
+			productReference = 0FF6DA7D15E645C10040F53B /* KIFCalculatorTestable.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -139,12 +210,29 @@
 			mainGroup = 0F61862315DBCFA000A23E51;
 			productRefGroup = 0F61862F15DBCFA000A23E51 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0FF6DA6415E645AC0040F53B /* Products */;
+					ProjectRef = 0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0F61862D15DBCFA000A23E51 /* KIFCalculator */,
+				0FF6DA6D15E645C10040F53B /* KIFCalculatorTestable */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0FF6DA6B15E645AC0040F53B /* libKIF.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKIF.a;
+			remoteRef = 0FF6DA6A15E645AC0040F53B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0F61862C15DBCFA000A23E51 /* Resources */ = {
@@ -154,6 +242,16 @@
 				0F61863D15DBCFA000A23E51 /* InfoPlist.strings in Resources */,
 				0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */,
 				0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF6DA7615E645C10040F53B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF6DA7715E645C10040F53B /* InfoPlist.strings in Resources */,
+				0FF6DA7815E645C10040F53B /* ViewController.xib in Resources */,
+				0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +265,17 @@
 				0F61863F15DBCFA000A23E51 /* main.m in Sources */,
 				0F61864315DBCFA000A23E51 /* AppDelegate.m in Sources */,
 				0F61864615DBCFA000A23E51 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FF6DA6E15E645C10040F53B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF6DA6F15E645C10040F53B /* main.m in Sources */,
+				0FF6DA7015E645C10040F53B /* AppDelegate.m in Sources */,
+				0FF6DA7115E645C10040F53B /* ViewController.m in Sources */,
+				0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +366,54 @@
 			};
 			name = Release;
 		};
+		0FF6DA7B15E645C10040F53B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIFCalculator/KIFCalculator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/frameworks/KIF/**",
+				);
+				INFOPLIST_FILE = "KIFCalculator/KIFCalculator-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = KIFCalculatorTestable;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FF6DA7C15E645C10040F53B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIFCalculator/KIFCalculator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"$(inherited)",
+					"RUN_KIF_TESTS=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/frameworks/KIF/**",
+				);
+				INFOPLIST_FILE = "KIFCalculator/KIFCalculator-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = KIFCalculatorTestable;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +431,15 @@
 			buildConfigurations = (
 				0F61864D15DBCFA000A23E51 /* Debug */,
 				0F61864E15DBCFA000A23E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FF6DA7A15E645C10040F53B /* Build configuration list for PBXNativeTarget "KIFCalculatorTestable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FF6DA7B15E645C10040F53B /* Debug */,
+				0FF6DA7C15E645C10040F53B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

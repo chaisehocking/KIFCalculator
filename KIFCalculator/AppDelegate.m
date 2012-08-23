@@ -1,14 +1,12 @@
-//
-//  AppDelegate.m
-//  KIFCalculator
-//
-//  Created by Chaise Hocking on 15/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+
+//  Created by Chaise Hocking
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+
+#if RUN_KIF_TESTS
+#import "KIFTestController.h"
+#endif
 
 @implementation AppDelegate
 
@@ -29,6 +27,14 @@
 	self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+	
+#if RUN_KIF_TESTS
+    [[KIFTestController sharedInstance] startTestingWithCompletionBlock:^{
+        // Exit after the tests complete so that CI knows we're done
+        exit([[KIFTestController sharedInstance] failureCount]);
+    }];
+#endif
+	
     return YES;
 }
 
