@@ -87,6 +87,7 @@
 		0F61862315DBCFA000A23E51 = {
 			isa = PBXGroup;
 			children = (
+				0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */,
 				0F61863815DBCFA000A23E51 /* KIFCalculator */,
 				0F61863115DBCFA000A23E51 /* Frameworks */,
 				0F61862F15DBCFA000A23E51 /* Products */,
@@ -116,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				0FF6DA8115E646E30040F53B /* Tests */,
-				0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */,
 				0F61864115DBCFA000A23E51 /* AppDelegate.h */,
 				0F61864215DBCFA000A23E51 /* AppDelegate.m */,
 				0F61864415DBCFA000A23E51 /* ViewController.h */,

@@ -1,10 +1,5 @@
-//
-//  KIFTestScenario+CalculatorOperations.m
-//  KIFCalculator
-//
-//  Created by Chaise Hocking on 17/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+
+//  Created by Chaise Hocking
 
 #import "KIFTestScenario.h"
 #import "KIFTestStep.h"
