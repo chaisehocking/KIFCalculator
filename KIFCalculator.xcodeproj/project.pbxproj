@@ -25,8 +25,8 @@
 		0FF6DA7715E645C10040F53B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F61863B15DBCFA000A23E51 /* InfoPlist.strings */; };
 		0FF6DA7815E645C10040F53B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
 		0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
-		0FF6DA8015E646490040F53B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA6B15E645AC0040F53B /* libKIF.a */; };
 		0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */; };
+		0FF6DA9115E64F680040F53B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA6B15E645AC0040F53B /* libKIF.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,13 @@
 			containerPortal = 0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = AAB07268139719AC008AF393;
+			remoteInfo = KIF;
+		};
+		0FF6DA8F15E64F600040F53B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB07267139719AC008AF393;
 			remoteInfo = KIF;
 		};
 /* End PBXContainerItemProxy section */
@@ -74,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FF6DA8015E646490040F53B /* libKIF.a in Frameworks */,
+				0FF6DA9115E64F680040F53B /* libKIF.a in Frameworks */,
 				0FF6DA7315E645C10040F53B /* UIKit.framework in Frameworks */,
 				0FF6DA7415E645C10040F53B /* Foundation.framework in Frameworks */,
 				0FF6DA7515E645C10040F53B /* CoreGraphics.framework in Frameworks */,
@@ -186,6 +193,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0FF6DA9015E64F600040F53B /* PBXTargetDependency */,
 			);
 			name = KIFCalculatorTestable;
 			productName = KIFCalculator;
@@ -280,6 +288,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FF6DA9015E64F600040F53B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KIF;
+			targetProxy = 0FF6DA8F15E64F600040F53B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0F61863B15DBCFA000A23E51 /* InfoPlist.strings */ = {
