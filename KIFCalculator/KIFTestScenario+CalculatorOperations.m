@@ -6,7 +6,7 @@
 
 @implementation KIFTestScenario (CalculatorOperations)
 
-+(id)scenarioToTestThePlusButton{
++(id)scenarioToTestThePlusFunction{
 	KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Ensure that when numbers are plussed the sum is shown"];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"5" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"+" traits:UIAccessibilityTraitButton]];
@@ -18,7 +18,7 @@
 	return scenario;
 }
 
-+(id)scenarioToTestTheMinusButton{
++(id)scenarioToTestTheMinusFunction{
 	KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Ensure that when numbers are subtracted the difference is shown"];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"6" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"-" traits:UIAccessibilityTraitButton]];
@@ -30,19 +30,23 @@
 	return scenario;
 }
 
-+(id)scenarioToTestTheMultiplyButton{
-	KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Ensure that when numbers are multiplied the product is shown"];
-	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"3" traits:UIAccessibilityTraitButton]];
-	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"×" traits:UIAccessibilityTraitButton]];
-	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"4" traits:UIAccessibilityTraitButton]];
-	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"=" traits:UIAccessibilityTraitButton]];
++(id)scenarioToTestTheMultiplyFunction{
+	KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Ensure that when numbers are multiplied together the product is shown"];
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"3"
+																traits:UIAccessibilityTraitButton]];
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"×"
+																traits:UIAccessibilityTraitButton]];
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"4"
+																traits:UIAccessibilityTraitButton]];
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"="
+																traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToWaitForViewWithAccessibilityLabel:@"Answer"
 																	 value:@"12"
 																	traits:UIAccessibilityTraitStaticText]];
 	return scenario;
 }
 
-+(id)scenarioToTestTheDivideButton{
++(id)scenarioToTestTheDivideFunction{
 	KIFTestScenario *scenario = [KIFTestScenario scenarioWithDescription:@"Ensure that when numbers are divided the quotient is shown"];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"9" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"÷" traits:UIAccessibilityTraitButton]];
