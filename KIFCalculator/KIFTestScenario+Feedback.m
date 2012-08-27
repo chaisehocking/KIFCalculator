@@ -19,7 +19,7 @@
 	[scenario addStep:[KIFTestStep stepToEnterText:@"Joe Blogs"
 					intoViewWithAccessibilityLabel:@"Name"
 											traits:UIAccessibilityTraitNone
-									expectedResult:@"Joe Blogs"]];
+									expectedResult:@"Joe Blogss"]];
 	
 	[scenario addStep:[KIFTestStep stepToEnterText:@"Joe.Blogs@gmail.com"
 					intoViewWithAccessibilityLabel:@"Email"
