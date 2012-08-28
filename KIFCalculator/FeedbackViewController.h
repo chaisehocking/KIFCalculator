@@ -2,7 +2,14 @@
 //  Created by Chaise Hocking
 
 #import <UIKit/UIKit.h>
-static NSString *kFeedbackPostedNotification = @"kFeedbackPostedNotification";
-@interface FeedbackViewController : UIViewController
 
+@protocol FeedbackViewControllerDelegate <NSObject>
+
+-(void)feedbackSent;
+-(void)feedbackCanceled;
+
+@end
+
+@interface FeedbackViewController : UIViewController
+@property(nonatomic, assign)id<FeedbackViewControllerDelegate> delegate;
 @end

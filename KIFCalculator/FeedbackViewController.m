@@ -10,6 +10,7 @@
 @property(nonatomic, retain)IBOutlet UISwitch *requireResponseSwitch;
 @property(nonatomic, retain)IBOutlet UITextView *feedbackField;
 @property(nonatomic, retain)IBOutlet UIScrollView *scrollView;
+@property(nonatomic, retain)IBOutlet UIButton *cancelButton;
 @end
 
 @implementation FeedbackViewController
@@ -18,23 +19,18 @@
 @synthesize requireResponseSwitch=_requireResponseSwitch;
 @synthesize feedbackField=_feedbackField;
 @synthesize scrollView=_scrollView;
+@synthesize cancelButton=_cancelButton;
+@synthesize delegate=_delegate;
 
+#pragma mark - Memory Management
 -(void)dealloc{
 	[_nameField release];
 	[_emailField release];
 	[_requireResponseSwitch release];
 	[_feedbackField release];
 	[_scrollView release];
+	[_cancelButton release];
 	[super dealloc];
-}
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
 }
 
 - (void)viewDidLoad
@@ -57,18 +53,20 @@
 	self.requireResponseSwitch = nil;
 	self.feedbackField = nil;
 	self.scrollView = nil;
-	
 }
 
+#pragma mark - Button Actions
 -(IBAction)submitButtonPressed:(UIButton *)sender{
-	[[NSNotificationCenter defaultCenter] postNotificationName:kFeedbackPostedNotification object:self];
-	[self.presentingViewController dismissViewControllerAnimated:YES
-													  completion:NULL];
+	[self.delegate feedbackSent];
 }
 
 -(IBAction)cancelButtonPressed:(UIButton *)sender{
-	[self.presentingViewController dismissViewControllerAnimated:YES
-													  completion:NULL];
+	[self.delegate feedbackCanceled];
+}
+
+#pragma mark UIPopoverViewController content size
+-(CGSize)contentSizeForViewInPopover{
+	return CGSizeMake(320, 460);
 }
 
 @end

@@ -34,12 +34,12 @@
 					intoViewWithAccessibilityLabel:@"Feedback Message"
 											traits:UIAccessibilityTraitNone expectedResult:message]];
 	
-	[scenario addStep:[KIFTestStep stepToWaitForNotificationName:@"kFeedbackPostedNotification"
-														  object:nil
-											  whileExecutingStep:
-					   [KIFTestStep stepToTapViewWithAccessibilityLabel:@"Submit" traits:UIAccessibilityTraitButton]]];
-	
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"Submit" traits:UIAccessibilityTraitButton]];
 	[scenario addStep:[KIFTestStep stepToWaitForAbsenceOfViewWithAccessibilityLabel:@"Feedback Form"]];
+	[scenario addStep:[KIFTestStep stepToWaitForViewWithAccessibilityLabel:@"Thanks for Your Feedback" traits:UIAccessibilityTraitStaticText]];
+	[scenario addStep:[KIFTestStep stepToTapViewWithAccessibilityLabel:@"OK" traits:UIAccessibilityTraitButton]];
+	[scenario addStep:[KIFTestStep stepToWaitForAbsenceOfViewWithAccessibilityLabel:@"Thanks for Your Feedback" traits:UIAccessibilityTraitStaticText]];
+	
 	return scenario;
 }
 
@@ -50,4 +50,5 @@
 	[scenario addStep:[KIFTestStep stepToWaitForAbsenceOfViewWithAccessibilityLabel:@"Feedback Form"]];
 	return scenario;
 }
+
 @end
