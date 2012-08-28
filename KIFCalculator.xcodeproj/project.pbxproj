@@ -16,6 +16,7 @@
 		0F61864615DBCFA000A23E51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864515DBCFA000A23E51 /* ViewController.m */; };
 		0F61864915DBCFA000A23E51 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
 		0F61865215DBD02300A23E51 /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
+		0FC202BC15ECF39D00393DC2 /* KIFTestScenario+Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FC202BB15ECF39D00393DC2 /* KIFTestScenario+Calculations.m */; };
 		0FF6DA6F15E645C10040F53B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61863E15DBCFA000A23E51 /* main.m */; };
 		0FF6DA7015E645C10040F53B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864215DBCFA000A23E51 /* AppDelegate.m */; };
 		0FF6DA7115E645C10040F53B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F61864515DBCFA000A23E51 /* ViewController.m */; };
@@ -25,7 +26,7 @@
 		0FF6DA7715E645C10040F53B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F61863B15DBCFA000A23E51 /* InfoPlist.strings */; };
 		0FF6DA7815E645C10040F53B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F61864715DBCFA000A23E51 /* ViewController.xib */; };
 		0FF6DA7915E645C10040F53B /* swipe-conference@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F61865115DBD02300A23E51 /* swipe-conference@2x.png */; };
-		0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */; };
+		0FF6DA8315E647010040F53B /* KIFTestScenario+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6DA8215E647010040F53B /* KIFTestScenario+Operations.m */; };
 		0FF6DA9115E64F680040F53B /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF6DA6B15E645AC0040F53B /* libKIF.a */; };
 		0FF6DA9315E6630B0040F53B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9215E6630B0040F53B /* Icon@2x.png */; };
 		0FF6DA9515E663530040F53B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FF6DA9415E663530040F53B /* Icon.png */; };
@@ -73,9 +74,10 @@
 		0F61864515DBCFA000A23E51 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F61864815DBCFA000A23E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		0F61865115DBD02300A23E51 /* swipe-conference@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swipe-conference@2x.png"; sourceTree = "<group>"; };
+		0FC202BB15ECF39D00393DC2 /* KIFTestScenario+Calculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+Calculations.m"; sourceTree = "<group>"; };
 		0FF6DA6315E645AC0040F53B /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = frameworks/KIF/KIF.xcodeproj; sourceTree = SOURCE_ROOT; };
 		0FF6DA7D15E645C10040F53B /* KIFCalculatorTestable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFCalculatorTestable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+CalculatorOperations.m"; sourceTree = "<group>"; };
+		0FF6DA8215E647010040F53B /* KIFTestScenario+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+Operations.m"; sourceTree = "<group>"; };
 		0FF6DA9215E6630B0040F53B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 		0FF6DA9415E663530040F53B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		0FF6DA9815E66FC00040F53B /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
@@ -178,8 +180,9 @@
 		0F6CF2F915E68A2000807E71 /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
-				0FF6DA8215E647010040F53B /* KIFTestScenario+CalculatorOperations.m */,
+				0FF6DA8215E647010040F53B /* KIFTestScenario+Operations.m */,
 				0FF6DAA315E679230040F53B /* KIFTestScenario+Feedback.m */,
+				0FC202BB15ECF39D00393DC2 /* KIFTestScenario+Calculations.m */,
 			);
 			name = Scenarios;
 			sourceTree = "<group>";
@@ -338,10 +341,11 @@
 				0FF6DA6F15E645C10040F53B /* main.m in Sources */,
 				0FF6DA7015E645C10040F53B /* AppDelegate.m in Sources */,
 				0FF6DA7115E645C10040F53B /* ViewController.m in Sources */,
-				0FF6DA8315E647010040F53B /* KIFTestScenario+CalculatorOperations.m in Sources */,
+				0FF6DA8315E647010040F53B /* KIFTestScenario+Operations.m in Sources */,
 				0FF6DA9C15E66FC00040F53B /* FeedbackViewController.m in Sources */,
 				0FF6DAA415E679230040F53B /* KIFTestScenario+Feedback.m in Sources */,
 				0FF6DAA715E67B3A0040F53B /* KIFCalculatorTestController.m in Sources */,
+				0FC202BC15ECF39D00393DC2 /* KIFTestScenario+Calculations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
