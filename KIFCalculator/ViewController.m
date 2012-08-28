@@ -33,10 +33,10 @@ typedef enum {
 
 #pragma mark - Memory Management
 -(void)dealloc{
-	[self dismissFeedbackForm:NO];
 	_feedbackViewController.delegate = nil;
 	[_feedbackViewController release];
 	
+	[_feedbackPopoverController dismissPopoverAnimated:NO];
 	_feedbackPopoverController.delegate = nil;
 	[_feedbackPopoverController release];
 	
@@ -171,7 +171,8 @@ typedef enum {
 		[self.feedbackPopoverController dismissPopoverAnimated:animated];
 	}
 	else {
-		[self dismissModalViewControllerAnimated:animated];
+		[self.feedbackViewController dismissViewControllerAnimated:animated
+														completion:NULL];
 	}
 }
 
