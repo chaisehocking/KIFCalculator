@@ -4,18 +4,18 @@
 #import "ViewController.h"
 #import "FeedbackViewController.h"
 typedef enum {
-	operatorNone,
-	operatorPlus,
-	operatorMinus,
-	operatorMultiply,
-	operatorDivide
-}calculatorOperator;
+	CalculatorOperatorNone,
+	CalculatorOperatorPlus,
+	CalculatorOperatorMinus,
+	CalculatorOperatorMultiply,
+	CalculatorOperatorDivide
+}CalculatorOperator;
 
 
 @interface ViewController ()<UIPopoverControllerDelegate, FeedbackViewControllerDelegate>
 @property(nonatomic, retain)IBOutlet UILabel *answerLabel;
 @property(nonatomic, assign)CGFloat currentAnswer;
-@property(nonatomic, assign)calculatorOperator currentOperator;
+@property(nonatomic, assign)CalculatorOperator currentOperator;
 @property(nonatomic, assign)BOOL answerShouldClear;
 
 @property(nonatomic, retain)FeedbackViewController *feedbackViewController;
@@ -72,13 +72,13 @@ typedef enum {
 -(CGFloat)evaluateAnswer{
 	CGFloat rightSide = [self.answerLabel.text floatValue];
 	switch (self.currentOperator) {
-		case operatorPlus:
-			return self.currentAnswer + rightSide;
-		case operatorMinus:
+		case CalculatorOperatorPlus:
 			return self.currentAnswer - rightSide;
-		case operatorMultiply:
+		case CalculatorOperatorMinus:
+			return self.currentAnswer + rightSide;
+		case CalculatorOperatorMultiply:
 			return self.currentAnswer * rightSide;
-		case operatorDivide:
+		case CalculatorOperatorDivide:
 			return self.currentAnswer / rightSide;
 		default:
 			return rightSide;
@@ -105,27 +105,27 @@ typedef enum {
 
 -(IBAction)equalsButtonPressed:(UIButton *)sender{
 	[self updateCurrentAnswer];
-	self.currentOperator = operatorNone;
+	self.currentOperator = CalculatorOperatorNone;
 }
 
 -(IBAction)plusButtonPressed:(UIButton *)sender{
 	[self updateCurrentAnswer];
-	self.currentOperator = operatorPlus;
+	self.currentOperator = CalculatorOperatorPlus;
 }
 
 -(IBAction)minusButtonPressed:(UIButton *)sender{
 	[self updateCurrentAnswer];
-	self.currentOperator = operatorMinus;
+	self.currentOperator = CalculatorOperatorMinus;
 }
 
 -(IBAction)divideButtonPressed:(UIButton *)sender{
 	[self updateCurrentAnswer];
-	self.currentOperator = operatorDivide;
+	self.currentOperator = CalculatorOperatorDivide;
 }
 
 -(IBAction)multiplyButtonPressed:(UIButton *)sender{
 	[self updateCurrentAnswer];
-	self.currentOperator = operatorMultiply;
+	self.currentOperator = CalculatorOperatorMultiply;
 }
 
 -(IBAction)infoButtonPressed:(UIButton *)sender{
