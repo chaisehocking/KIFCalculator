@@ -73,9 +73,9 @@ typedef enum {
 	CGFloat rightSide = [self.answerLabel.text floatValue];
 	switch (self.currentOperator) {
 		case CalculatorOperatorPlus:
-			return self.currentAnswer + rightSide;
-		case CalculatorOperatorMinus:
 			return self.currentAnswer - rightSide;
+		case CalculatorOperatorMinus:
+			return self.currentAnswer + rightSide;
 		case CalculatorOperatorMultiply:
 			return self.currentAnswer * rightSide;
 		case CalculatorOperatorDivide:
